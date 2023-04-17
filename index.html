@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Nina Carducci - Photographe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nina Carducci - Photographe à Bordeaux</title>
     <meta
       name="description"
-      content="professionnal website of phtographer Nina Carducci"
+      content="Nina Carducci, Photographe professionnelle à Bordeaux. Mariages. Concerts. Business."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.ninacarduccci.fr" />
+    <meta
+      property="og:image"
+      content="http://www.ninacarduccci.fr/camera.webp"
+    />
+    <meta
+      property="og:description"
+      content="Nina Carducci, Photographe professionnelle à Bordeaux. Mariages. Concerts. Business."
+    />
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,19 +32,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+
   </head>
   <body>
     <header class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+      <h1 class="name">Nina Carducci</h1>
       <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -39,7 +48,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="instagram logo"
+              ><img src="assets/images/instagram.png" alt="instagram logo" width="20" height="20"
             /></a>
           </li>
         </ul>
@@ -76,25 +85,108 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+              <picture>
+                <source
+                  media="(max-width: 1000px)"
+                  sizes="(max-width:1000px)"
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_w1000.webp
+                    "    style="width:1000; height:463;
+                    object-fit:cover;"
+                  />
+                <source
+                  media="(min-width: 1001px)"
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp
+                    "    style="width:1920; height:888;
+                    object-fit:cover;"
+                  />
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+                  alt="man in dark suit carrying a bag walking on zebra crossing"
+                  style="width:1000; height:463;
+                  object-fit:cover;"                
+                  />
+              </picture>
+
+              <!--
+
+				<img
+                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
                 class="d-block w-100"
                 alt="man in dark suit carrying a bag walking on zebra crossing"
               />
+			
+			-->
             </div>
             <div class="carousel-item">
+              <picture>
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_w1000.webp
+                  "    style="width:1000; height:463;
+                  object-fit:cover;"
+                />
+                <source
+                  media="(min-width: 1001px)"
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp
+                  " style="width:1920; height:888;
+                  object-fit:cover;" 
+                />
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+                  alt="men in show audience raising arms"
+                  style="width:1000; height:463;
+                  object-fit:cover;"
+                />
+              </picture>
+
+              <!-- 
               <img
-                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
                 class="d-block w-100"
                 alt="men in show audience raising arms"
               />
+
+			  -->
             </div>
             <div class="carousel-item">
+              <picture>
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_w1000.webp
+                    "    style="width:1000; height:463;
+                    object-fit:cover;"
+                  />
+                <source
+                  media="(min-width: 1001px)"
+                  srcset="
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp
+                    "    style="width:1920; height:888;
+                    object-fit:cover;"
+                />
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+                  alt="groom kissing bride betwen guard of honor"
+                  style="width:1000; height:463;
+                  object-fit:cover;"
+                />
+              </picture>
+
+              <!--
               <img
-                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
                 class="d-block w-100"
                 alt="groom kissing bride betwen guard of honor"
               />
+
+			  -->
             </div>
           </div>
           <button
@@ -118,14 +210,16 @@
         </div>
       </section>
       <section id="about">
-        <div class="picture left">
+        <div class="photo-nina left">
           <img
-            src="./assets/images/nina.png"
+          style="width:500; height:499;
+          object-fit:cover;"
+            src="./assets/images/nina.webp"
             alt="Nina Carducci, photographe"
           />
         </div>
         <article id="about-me">
-          <h3 class="about-me__title">A propos de moi</h3>
+          <h2 class="about-me__title">A propos de moi</h2>
           <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
@@ -152,55 +246,55 @@
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
               alt="concert show ceiling lights, musicians on stage and audience hands up"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
               alt="portrait, elegant man in dark suit with red tie and watch"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
               alt="woman laughing navy blue top dotted scarf, blurred woman head in foreground"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
               alt="mariage, man and woman hands with wedding ring joining together"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
               alt="portrait, man with dark beard, black shirt and metal necklace, squinting"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
               alt="mariage, wedded couple laughing, walking on a beach with palm trees in background"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
               alt="portrait, woman with neck cut hair, transparent glassess and dark shirt"
             />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
               alt="concert, artist with mic raising hand, red and blue colored smoke and lightning"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
               alt="office, woman in dark top wiith withe dots laughing behind laptop"
             />
           </div>
@@ -301,9 +395,11 @@
               <input type="submit" value="Envoyer" />
             </form>
           </div>
-          <div class="picture right">
+          <div class="photo-camera right">
             <img
-              src="./assets/images/camera.png"
+            width="500"
+            height="499"
+              src="./assets/images/camera.webp"
               alt="black camera litted in red"
             />
           </div>
@@ -311,13 +407,29 @@
       </div>
     </main>
     <footer>
-      <h3>• Nina Carducci •</h3>
-      <p>
-        68 avenue Alsace-Lorraine<br />
-        33200 Bordeaux<br />
-        05 56 67 78 89<br />
-        lundi au vendredi de 10h à 19h
-      </p>
+      <div itemscope itemtype=”https://schema.org/LocalBusiness” class="footer_infos_block">
+        <h3 itemprop=”name”>Nina Carducci</h3>
+        
+        <div itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress” class="footer_infos adress_and_opening">
+          <span itemprop=”streetAddress” class="adress_and_opening">Avenue Alsace-Lorraine</span>
+          <span><span itemprop=”postalCode” class="adress_and_opening">33200</span>
+          <span itemprop=”addressLocality” class="adress_and_opening">Bordeaux</span></span>
+          <span itemprop="telephone" class="adress_and_opening">05 56 67 78 89</span>
+          <span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00" class="adress_and_opening">lundi - vendredi de 10h à 19h</span>
+        </div>
+      </div>
+
     </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script async src="./assets/bootstrap/bootstrap.bundle.js"></script>
+  <script
+    async
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script async src="./assets/maugallery.js"></script>
+  <script async src="./assets/scripts.js"></script>
+
 </html>
