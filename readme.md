@@ -6,18 +6,23 @@ GitHub : https://github.com/Dam-C/OC_P09 Git link : https://github.com/Dam-C/OC_
 
 ### 9th Project of the OpenClassrooms course for web dev "Intégrateur Web"
 
-The goal is to :
+The goal is to obtain a broad understanding of SEO :
+
+- technical solutions for optimizing performances
+- structuring a page for local SEO
+- semantic html for crawlability of google bots (crawlers)
+- acessibility requirements for impaired users
 
 \_
 
 ## Installation
 
 Download the project via the github link.
-Once extracted use your IDE or terminal and place yourself in the "Kasa" folder
-Type : npm run dev
-this will start the developpement local server 4. Your terminal should give you a link to view the site in your internet browser. (usually "http://localhost:xxxx")
+Once extracted use your IDE or terminal and place yourself in the "P9" folder
+Use a live server extension to open it with your local brower.
+Your browser should open automatically, else the terminal should give you a link to view the site in your internet browser. (usually "http://localhost:xxxx")
 
-You can now navigate throught the Kasa page
+You can now navigate throught the website of Nina Carducci
 \_
 
 ## Technologies
@@ -25,6 +30,4 @@ You can now navigate throught the Kasa page
 HTML
 CSS
 Javascript
-React
-Vite v4.1.4
-React Router v6.4
+Bootstrap framework
